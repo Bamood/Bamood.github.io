@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <h2>PvP or PvE?</h2>
-    <button type="button">PvP</button>   <p><em>Or</em></p> <button type="button">PvE</button>
+    <div id="start-menu">
+        <h1>Welcome!</h1>
+        <label for="game-mode">Select Game Mode:</label>
+        <select id="game-mode">
+            <option value="human">Play against another player</option>
+            <option value="robot">Play against a robot</option>
+        </select>
+        <button onclick="playerNameSelect()">Next</button>
+    </div>
 </body>
 </html>
