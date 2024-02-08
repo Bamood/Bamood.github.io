@@ -1,25 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Ahmad, this code is very ugly and maybe outside of your "range". So change whats needed-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="start-menu">
+    <div id="start-menu"> <!--Divides the start menu and the name select menu-->
         <h1>Welcome!</h1>
-        <label for="game-mode">Select Game Mode:</label>
-        <select id="game-mode">
+        <label for="game-mode">Select Game Mode:</label> <!--Adds a small text before the dropdown-->
+        <select id="game-mode"> <!--This is the dropdown with some values used in the .js script-->
             <option value="human">Play against another player</option>
             <option value="robot">Play against a robot</option>
         </select>
-        <button onclick="playerNameSelect()">Next</button>
+        <button onclick="playerNameSelect()">Next</button> <!--A function to switch to the next menu-->
     </div>
 
     <div id="name-input" style="display: none;">
         <label for="player1">Player 1 Name:</label>
-        <input type="text" id="player1" placeholder="Enter Player 1 name">
+        <input type="text" id="player1" placeholder="Enter Player 1 name"> <!--Inputs with an Id for the players name-->
 
         <label for="player2">Player 2 Name:</label>
         <input type="text" id="player2" placeholder="Enter Player 2 name">
