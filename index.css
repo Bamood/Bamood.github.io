@@ -1,1 +1,14 @@
+.start-menu {
+  background-color: white;
+  display: block;
+}
 
+.diff-select {
+  background-color: white;
+  display: none;
+}
+
+.name-input {
+  background-color: white;
+  display: none;
+}
