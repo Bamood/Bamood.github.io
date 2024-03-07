@@ -7,13 +7,21 @@
 </head>
 <body>
     <div id="start-menu"> <!--Divides the start menu and the name select menu-->
-        <h1>Welcome!</h1>
+        <h1>Welcome to Tic Tac Toe!</h1>
         <label for="game-mode">Select Game Mode:</label> <!--Adds a small text before the dropdown-->
         <select id="game-mode"> <!--This is the dropdown with some values used in the .js script-->
             <option value="human">Play against another player</option>
             <option value="robot">Play against a robot</option>
         </select>
-        <button onclick="playerNameSelect()">Next</button> <!--A function to switch to the next menu-->
+        <button onclick="diff()">Next</button> <!--A function to switch to the next menu-->
+    </div>
+
+    <div id="diff-select" style="display: none;">
+        <select id="diff">
+            <option value="easy">Easy</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button onclick="playerNameSelect()">Next</button>
     </div>
 
     <div id="name-input" style="display: none;">
@@ -23,8 +31,8 @@
         <label for="player2">Player 2 Name:</label>
         <input type="text" id="player2" placeholder="Enter Player 2 name">
 
-        <button onclick="startGame()">Start Game</button>
+        <button onclick="startgame()">Start Game</button>
     </div>
-    
+
 </body>
 </html>
