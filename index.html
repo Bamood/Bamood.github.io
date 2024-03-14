@@ -1,21 +1,27 @@
-<!DOCTYPE html> <!-- Ahmad, this code is very ugly and maybe outside of your "range". So change what's needed-->
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <style>
-    start-menu {
+    #start-menu {
     border: 5px outset red;
     background-color: lightblue;
     text-align: center;
     }
 
-    diff-select{
+    #diff-select{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+    }
+
+    #name-input{
     border: 5px outset red;
     background-color: lightblue;
     text-align: center;
     }
     </style>
     
-    <script src="index.js" type="text/javascript"></script>
+    <script src="SlutProjekt.js"></script>
     <link type="text/css" rel="stylesheet" href="/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +35,7 @@
             <option value="human">Play against another player</option>
             <option value="robot">Play against a robot</option>
         </select>
-        <button onclick="diff()">Next</button> <!--A function to switch to the next menu-->
+        <button onclick= "diff()">Next</button> <!--A function to switch to the next menu-->
     </div>
 
     <div id="diff-select" style="display: none;">
